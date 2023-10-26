@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set, description, and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Rico Kan Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../lightbox/css/lightbox.css" rel="stylesheet" />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <!-- Title for the web page -->
+    <title>Rico Kan Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../lightbox/js/lightbox.js"></script>
+  </head>
+  <body>
+    <!-- Desktop navigation bar section -->
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="../index.html">Rico Kan</a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hamburger navigation bar section -->
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="../index.html">Rico Kan</a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Menu links for mobile menu -->
+        <div class="menu-links">
+          <li><a href="../index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="portfolio.html" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="portfolio_details">
+      <h1 class="title">Typography Poster (Helvetica)</h1>
+      <a
+        href="../img/Typography Poster.png"
+        data-lightbox="work"
+        data-title="Designing a typography poster for the font Helvetica"
+      >
+        <img src="../img/Typography Poster.png" alt="Typography Poster" />
+      </a>
+      <h2>Helvetica Typography Poster using Adobe Illustrator</h2>
+      <p>
+        For the typography poster, I delved into the timeless allure of
+        Helvetica, a fontface revered globally for its clarity and elegance.
+        Embracing its legacy, I crafted a poster that pays homage to this iconic
+        typeface. Infused with a warm color palette dominated by vibrant
+        oranges, the poster resonates with creativity and energy. The focal
+        point became the font's inception year, magnificently emphasized,
+        underscoring its historical significance. Additionally, the poster
+        showcases various Helvetica variants, offering viewers a comprehensive
+        visual journey through this font's versatility and enduring charm.
+        Through this project, I celebrated Helvetica's legacy while exploring
+        innovative design techniques.
+      </p>
+    </div>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Rico Kan's porfrolio. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

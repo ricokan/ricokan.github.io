@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set, description, and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Rico Kan Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../lightbox/css/lightbox.css" rel="stylesheet" />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <!-- Title for the web page -->
+    <title>Rico Kan Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../lightbox/js/lightbox.js"></script>
+  </head>
+  <body>
+    <!-- Desktop navigation bar section -->
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="../index.html">Rico Kan</a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hamburger navigation bar section -->
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="../index.html">Rico Kan</a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Menu links for mobile menu -->
+        <div class="menu-links">
+          <li><a href="../index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="portfolio.html" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="portfolio_details">
+      <h1 class="title">Revamping the Humber Current webpage</h1>
+      <a
+        href="../img/Web Design .png"
+        data-lightbox="work"
+        data-title="Redesign a webpage by using Figma"
+      >
+        <img src="../img/Web Design .png" />
+      </a>
+      <h2>Redesigning Humber Current Website</h2>
+      <p>
+        Revamping the Humber Current webpage was a venture into enhancing user
+        experience and fostering seamless connections. Armed with Figma, I
+        meticulously reimagined every facet of the site. Navigational ease took
+        precedence; I streamlined pathways for employers and recruiters to
+        discover student talent effortlessly. Through thoughtful design, I
+        integrated interactive elements that not only showcased student
+        portfolios but also engaged visitors. The revamped site became a hub
+        where innovation met functionality, elevating Humber Current into a
+        dynamic platform, bridging the gap between students and opportunities.
+      </p>
+    </div>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Rico Kan's porfrolio. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

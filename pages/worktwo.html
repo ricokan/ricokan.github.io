@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set, description, and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Rico Kan Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../lightbox/css/lightbox.css" rel="stylesheet" />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <!-- Title for the web page -->
+    <title>Rico Kan Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../lightbox/js/lightbox.js"></script>
+  </head>
+  <body>
+    <!-- Desktop navigation bar section -->
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="../index.html">Rico Kan</a>
+      </div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hamburger navigation bar section -->
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="../index.html">Rico Kan</a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Menu links for mobile menu -->
+        <div class="menu-links">
+          <li><a href="../index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="portfolio.html" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="portfolio_details">
+      <h1 class="title">Pixels vs Vectors</h1>
+      <a
+        href="../img/Game Cover Project.png"
+        data-lightbox="work"
+        data-title="Design a game cover out of creativity"
+      >
+        <img src="../img/Game Cover Project.png" alt="Gamce Cover" />
+      </a>
+      <h2>Design for a game cover using Adobe Photoshop and Illustrator</h2>
+      <p>
+        In the creation of "Pixels vs Vectors," a captivating game cover art, I
+        seamlessly blended the realms of Adobe Photoshop and Illustrator. This
+        artwork explores the dynamic interplay between pixels and vectors,
+        showcasing a visually stimulating clash of styles. The meticulous
+        integration of playful imagery and diverse typography not only
+        complements the game's title but also adds depth to its narrative.
+        Through this project, I honed my skills in digital artistry, mastering
+        the art of balancing vibrant visuals and compelling typography to craft
+        an enticing game cover that captivates the audience's imagination.
+      </p>
+    </div>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Rico Kan's porfrolio. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

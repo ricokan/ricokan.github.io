@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set, description, and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Rico Kan Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../lightbox/css/lightbox.css" rel="stylesheet" />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <!-- Title for the web page -->
+    <title>Rico Kan Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../lightbox/js/lightbox.js"></script>
+  </head>
+  <body>
+    <!-- Desktop navigation bar section -->
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="../index.html">Rico Kan</a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hamburger navigation bar section -->
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="../index.html">Rico Kan</a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Menu links for mobile menu -->
+        <div class="menu-links">
+          <li><a href="../index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="portfolio.html" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="portfolio_details">
+      <h1 class="title">AR Agumented Reality Experience</h1>
+      <a
+        href="../img/ARVR.png"
+        data-lightbox="work"
+        data-title="Augmented reality for FromSoftware Company"
+      >
+        <img src="../img/ARVR.png" />
+      </a>
+      <h2>AR venture using Adobe Aero</h2>
+      <p>
+        In my AR venture using Adobe Aero, I immersed myself in the rich
+        universe of FromSoftware's Soulsborne game series. Through augmented
+        reality, I meticulously crafted interactive boards showcasing diverse
+        games birthed by this esteemed Japanese company. The experience was
+        elevated with dynamic 3D logo reveals, adding a layer of depth and
+        intrigue. It wasn't just about showcasing games; it was about crafting
+        an immersive journey, inviting viewers to explore the intricate worlds
+        FromSoftware has masterfully created. Through this AR escapade, I melded
+        technology with gaming artistry, offering an unparalleled glimpse into
+        the Soulsborne universe.
+        <a href="https://adobeaero.app.link/xaG5de7TODb" class="tryitlink"
+          >Try it now!</a
+        >
+      </p>
+    </div>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Rico Kan's porfrolio. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

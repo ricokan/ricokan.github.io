@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set, description, and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Rico Kan Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../lightbox/css/lightbox.css" rel="stylesheet" />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <!-- Title for the web page -->
+    <title>Rico Kan Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../lightbox/js/lightbox.js"></script>
+  </head>
+  <body>
+    <!-- Desktop navigation bar section -->
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="../index.html">Rico Kan</a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hamburger navigation bar section -->
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="../index.html">Rico Kan</a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Menu links for mobile menu -->
+        <div class="menu-links">
+          <li><a href="../index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="portfolio.html" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="portfolio_details">
+      <h1 class="title">Say Cheese</h1>
+      <a
+        href="../img/poster1.jpg"
+        data-lightbox="work"
+        data-title="Morning poster series 1 - brush my teeth, all done by illustrator and photoshop"
+      >
+        <img src="../img/poster1.jpg" />
+      </a>
+      <h2>A morning routine poster using Adobe Illustrator</h2>
+      <p>
+        "Say Cheese" is a vibrant morning event routine poster crafted with
+        Adobe Illustrator, bringing everyday activities to life in a playful
+        cartoon theme. This poster captures the essence of our morning rituals,
+        reminiscent of the act of brushing teeth. Through this artwork, I
+        demonstrated my proficiency in Illustrator, showcasing skills in graphic
+        design and creativity. The design incorporates a thoughtful choice of
+        colors and typography, enhancing the overall visual appeal. With
+        attention to detail, I depicted event-specific information, such as date
+        and time, ensuring a visually engaging and informative poster within a
+        limited space.
+      </p>
+    </div>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Rico Kan's porfrolio. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
