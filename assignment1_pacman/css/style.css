@@ -1,0 +1,344 @@
+/*CSS Stylesheet */
+@font-face {
+    font-family: 'prstartk';
+    src: url('font/prstartk.ttf') format('ttf');
+}
+
+html{
+    font-family: Press start k;
+    background-color: #000000;
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+  }
+
+  section:not(#players):after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-image: repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 3px,
+      yellow 3px,
+      yellow 6px
+    );
+    margin-top: 140px;
+    margin-bottom: 100px;
+  }
+
+header{
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
+
+header img{
+    transform: scale(1.2);
+}
+
+/* nav bar */
+nav {
+    text-align: center;
+}
+  
+nav ol {
+display: flex;
+justify-content: center;
+list-style-type: none;
+margin: 0;
+padding: 0;
+padding-bottom: 50px;
+font-size: 14px; 
+}
+
+nav li {
+margin: 0 30px;
+
+}
+
+nav a {
+color: white;
+text-decoration: none;
+
+}
+
+nav a:hover {
+    color: yellow;
+    transition: color 0.5s;
+}
+  
+/* home section */
+#home {
+    margin-top: 70px;
+}
+
+#home img[src="img/Pacman.png"] {
+    transform: scaleX(-1);
+}
+
+#home .ghostchase img {
+    width: 50px;
+}
+
+.ghostchase{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#home p {
+    text-align: center;
+    font-size: 20px;
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+
+#home .ghostchase img.pacman {
+    margin-right: 90px; 
+  }
+
+
+.ghostchase{
+    animation-name: ghostchase;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ghostchase {
+    0% {
+      transform: translateX(1300px);
+    }
+   
+
+    100% {
+      transform: translateX(-1300px);
+    }
+}
+
+/* highscores section */
+#highscores h1 {
+    text-align: center;
+    color: #F9ED3F;
+    margin-bottom: 50px;
+
+}
+
+#highscores {
+    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+  #highscores p {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+#highscores table {
+    margin: 0px 200px 0 200px;
+    font-size: 18px;
+
+  }
+  
+#highscores table tr th {
+    padding-bottom: 25px;
+  }
+  
+#highscores table tr td {
+    width: 1000px;
+    padding: 8px;
+  }
+
+.data tr:nth-child(4n-3) {
+    color: #FFA002;
+  }
+
+.data tr:nth-child(4n-2) {
+    color: #FF0401;
+  }
+
+.data tr:nth-child(4n-1) {
+    color: #01F8F8;
+  }
+
+.data tr:nth-child(4n-4) {
+    color: #FF60B0;
+  }
+
+  /* howtoplay section */
+
+#howtoplay .chaseghost img {
+    width: 50px;
+}
+
+.pacman2 {
+    margin-right: 90px; 
+  }
+
+.chaseghost{
+    animation-name: chaseghost;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-top: 200px;
+}
+
+@keyframes chaseghost {
+0% {
+    transform: translateX(-1000px);
+}
+
+100% {
+    transform: translateX(1700px);
+}
+}
+
+.howtoplayinfo{
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+    line-height: 1.2;
+}
+
+.howtoplayinfo h1 span{
+    color: #FFD300;
+    text-transform: uppercase;
+} 
+
+.title {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+/* players */
+#players{
+     margin-top: 180px;
+}
+
+#players h1{
+    text-align: center;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+.players{
+    margin-top: 200px;
+}
+
+#players img{
+    width: 50px;
+    transform: scaleX(-1);
+}
+
+.player{
+  display: flex;
+  align-items: center;
+}
+
+
+#players {
+  text-align: center;
+}
+
+.player-info {
+  display: inline-block;
+ 
+}
+
+#players .player-info h1:last-child {
+    text-align: left;
+  }
+
+  .player-info div:nth-of-type(1) {
+    color: #ff0401;
+  }
+  
+  .player-info  div:nth-of-type(2) {
+    color: #ff60b0;
+  }
+  
+  .player-info  div:nth-of-type(3) {
+    color: #01f8f8;
+  }
+  
+  .player-info  div:nth-of-type(4) {
+    color: #ffa002;
+  }
+
+.pts200{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pts200 img{
+    padding: 10px;
+}
+
+.pts50{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.pts10{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#players .pts10 h1{
+    margin-right: 60px;
+}
+
+#players .pts50 h1{
+    margin-right: 60px;
+}
+
+#players .pts200 h1 {
+    margin-right: 40px;
+  }
+
+
+.pts50box{
+width: 30px;
+height: 30px;
+background-color: #f9ed3f;
+
+}
+
+.pts10box{
+width: 10px;
+height: 10px;
+background-color: #f9ed3f;
+}
+
+footer{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 150px;
+}
+
+
+  
+
